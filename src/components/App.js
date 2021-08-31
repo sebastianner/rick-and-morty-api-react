@@ -30,10 +30,6 @@ class App extends React.Component {
     };
   }
 
-  componentDidUpdate() {
-    console.log("updated");
-  }
-
   fetchCharacters = async () => {
     this.setState({ loading: true, error: null });
 
@@ -46,13 +42,8 @@ class App extends React.Component {
           info: response.info,
           results: [].concat(this.state.data.results, response.results),
         },
+        loading: false,
       });
-
-      setTimeout(() => {
-        this.setState({
-          loading: false,
-        });
-      }, 5000);
     } catch (error) {
       this.setState({ loading: false, error: error });
     }
