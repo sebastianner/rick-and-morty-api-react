@@ -22,7 +22,7 @@ class CharDetails extends Component {
             {data.status === "Alive" ? (
               <p>{`${dataKeys[2]} : ${data.status}`}</p>
             ) : (
-              <p className="text-red-600">{`${dataKeys[2]} : ${data.status}`}</p>
+              <p>{`${dataKeys[2]} : ${data.status}`}</p>
             )}
             <p>{`${dataKeys[3]} : ${data.species}`}</p>
             <p>{`${dataKeys[5]} : ${data.gender}`}</p>
