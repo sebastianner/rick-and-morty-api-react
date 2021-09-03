@@ -8,7 +8,7 @@ class CharList extends Component {
       <React.Fragment>
         {this.props.state.data.results.map((char) => (
           <li key={char.id}>
-            <Link to={`/${char.id}`}>
+            <Link to={`/rick-and-morty-api-react/${char.id}`}>
               <Card character={char} state={this.props.state} />
             </Link>
           </li>

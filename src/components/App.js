@@ -10,8 +10,16 @@ class App extends React.Component {
       <BrowserRouter>
         <Layout>
           <Switch>
-            <Route exact path="/" component={MainContainer} />
-            <Route exact path="/:charid" component={CharDetailsContainer} />
+            <Route
+              exact
+              path="/rick-and-morty-api-react"
+              component={MainContainer}
+            />
+            <Route
+              exact
+              path="/rick-and-morty-api-react/:charid"
+              component={CharDetailsContainer}
+            />
           </Switch>
         </Layout>
       </BrowserRouter>
